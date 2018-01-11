@@ -1,4 +1,4 @@
-function mojafunkcija(data){
+function searchDatabase(data){
     var results = [];
     element = document.getElementById('tb_name');
     var key = element.value != "" ? key = element.value.toString() : key = null;
