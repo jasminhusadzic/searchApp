@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+		<title>HTML Search</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="data/data.js"></script>
+		<script type="text/javascript" src="js/myscript.js"></script>
+    </head>
+    <body>
+	<div class="wrapper">
+		<h1>Search data by P-Number, Reg Number or Phone</h1>
+		<div class="form-wrapper">
+        <form onsubmit="return false;">
+			<input id="tb_name" type="text" name="tb_name" placeholder="Search here"><br><br>
+			<input id="btn_search" type="submit" name="btn_search" value="search">
+		</form>
+		<div>
+		<div id="result"></div>
+	<div>
+		<script>
+			document.getElementById('btn_search').onclick = function() {mojafunkcija(data)};
+			document.getElementById('btn_search').ontouchend = function() {alert('cao')};	
+		</script>
+    </body>
+</html>
