@@ -4,11 +4,16 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Oswald', sans-serif;
   }
-
-  h1 {
-    color: #FFF;
+  h1, h2, h3, h4, h5, h6 {
+    color: #FFF !important;
+    font-family: 'Cutive Mono', monospace !important;
+  }
+  .main-header {
+    text-align: center;
+  }
+  .my-search-form{
+    padding:10px 30px 10px 30px !important;
   }
   .my-search-form input {
     width:100%;
@@ -21,4 +26,7 @@ body{
     border-radius:0;
     padding:10px;
   }
-  
+  .front-logo {
+    width:15%;
+    margin-top:15px;
+  }
