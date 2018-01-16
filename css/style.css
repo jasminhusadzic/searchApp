@@ -5,10 +5,11 @@ body{
     -o-background-size: cover;
     background-size: cover;
   }
-  h1, h2, h3, h4, h5, h6 {
+  p, h1, h2, h3, h4, h5, h6 {
     color: #FFF !important;
     font-family: 'Cutive Mono', monospace !important;
   }
+
   .main-header {
     text-align: center;
   }
@@ -28,5 +29,9 @@ body{
   }
   .front-logo {
     width:15%;
+    margin-top:15px;
+  }
+  .my-results {
+    border: 1px solid #FFF;
     margin-top:15px;
   }
