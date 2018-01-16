@@ -20,7 +20,6 @@ function searchDatabase(data){
     if (results.length > 0){
         for(var i=0;i<results.length; i++){
             var div = document.createElement('div');
-            var span = document.createElement('div');
             div.className += "col-md-4 col-sm-6 col-xs-12 col-lg-3 my-results text-center"; 
             //Name
             var p_name = document.createElement('p');
