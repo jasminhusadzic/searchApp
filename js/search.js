@@ -1,11 +1,12 @@
 function searchDatabase(data){
     var results = [];
     element = document.getElementById('tb_name');
-    var searchResult = document.getElementById('search-result');
+    var searchResult = document.getElementById('search-result'); 
     searchResult.innerHTML = "";
     var key = element.value != "" ? key = element.value.toString() : key = null;
     if (key === null){
-        alert("Please insert data")
+        alert("Please insert data");
+        return;
     }else{
         var regex =  new RegExp(key, 'i');
         for ( var i=0; i < data.length; i++){
@@ -17,6 +18,7 @@ function searchDatabase(data){
             }
         }
     }
+        
     if (results.length > 0){
         for(var i=0;i<results.length; i++){
             var div = document.createElement('div');
@@ -49,7 +51,7 @@ function searchDatabase(data){
             var p_span = document.createElement('p');
             var span = document.createTextNode(results[i].span);
             p_span.appendChild(span);
-
+            // Render results
             div.appendChild(p_name);
             div.appendChild(p_pNumber);
             div.appendChild(p_adress);
@@ -60,6 +62,12 @@ function searchDatabase(data){
             
         }
     }else {
-        alert('nema');
+        var div = document.createElement('div');
+        div.className += "col-md-6 col-sm-6 col-xs-12 col-lg-6 col-md-offset-3 col-sm-offset-3 col-lg-offset-3 text-center no-result";
+        var pMessage = document.createElement('p');
+        var message = document.createTextNode("No result");
+        pMessage.appendChild(message);
+        div.appendChild(pMessage);
+        searchResult.appendChild(div);
     }
 }
